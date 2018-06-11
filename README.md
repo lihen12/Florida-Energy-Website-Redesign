@@ -13,16 +13,25 @@ Add a note to the project's README file linking to the charting library used, an
 Provided Text file contains the columns:
 
 x: Year
+
 y: BTU count in Billions
 
 >Year,Billion Btu
+
 >2015,234192
+
 >2014,226863
+
 >2013,229666
+
 >...
+
 >1962,35826
+
 >1961,34417
+
 >1960,35680
+
 
 Source: [https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A](https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A)
 
@@ -31,15 +40,23 @@ Source: [https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A](https://www.e
 Provided Text file contains the columns:
 
 x: Year
+
 y: BTU count in Billions
 
 >Year,Billion Btu
+
 >2016,804283
+
 >2015,803865
+
 >2014,771379
+
 >...
+
 >1962,71216
+
 >1961,62705
+
 >1960,57344
 
 Source: [https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A](https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A)
