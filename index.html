@@ -6,6 +6,8 @@
     
     <meta charset="UTF-8">
     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -48,7 +50,7 @@
     
     <header>
       <div class="wrap">
-        <div class="nav-toggle">
+        <div class="nav-toggle" onclick="openNav()">
           <span></span>
         </div>
         
@@ -60,87 +62,135 @@
       </div>
     </header>
     
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        
-        <li>
-          <a href="education.html">Opportunities</a>
-        </li>
-        
-        <li>
-          <a href="outreach.html">Outreach</a>
-        </li>
-      </ul>
-    </nav>
+    <div id="mySidenav" class="sidenav">
+      <div class="inside-nav">
+        <ul>
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+
+          <li>
+            <a href="education.html">Opportunities</a>
+          </li>
+
+          <li>
+            <a href="outreach.html">Outreach</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Mission Message, REVISE for later -->
-    <section>
-      <h1>A Brief Background of the FESC</h1>
+    <div class="contentwrap">
+      <section class="area title">
+        <article class="wrap">
+          <div class="text">
+            <h1>FESC - Florida Energy Systems Consortium</h1>
+          </div>
+        </article>
+      </section>
+      <section class="area project-background">
+        <article class="wrap">
+          <div class="text">
+            <h2>A Brief Background of the FESC</h2>
+
+            <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area video">
+        <article class="wrap">
+          <div class="text">
+            <h2>Watch our Story</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YA2ofbdd-G8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </article>
+      </section>
+
+      <section class="area goal">
+        <article class="wrap">
+          <div class="text">
+            <h2>Our Goal</h2>
+
+            <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.</p>
+
+            <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area steps">
+        <article class="wrap">
+          <div class="text">
+            <h2>Steps to Reach our Goal</h2>
+
+            <h3>Outreach</h3>
+
+            <p>(a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</p>
+
+            <p>(b) Assist in the creation and development of a Florida-based energy technology industry by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area education">
+        <article class="wrap">
+          <div class="text">
+            <h2>Education</h2>
+
+            <p>(c) Provide a state resource for objective energy systems analysis.</p>
+
+            <p>(d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area newsletter">
+        <article class="wrap">
+          <div class="text">
+            <form method="GET">
+              <h3>Want to learn more? Sign up for the FESC Florida Energy Connections Newsletter</h3>
+
+              <label>
+                Name
+                <input type="text" name="name">
+              </label>
+
+              <label>
+                E-Mail:
+                <input type="email" name="email">
+              </label>
+
+              <input type="submit" value="submit">
+            </form>
+            </div>
+          </article>
+      </section>
       
-      <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. </p>
-    </section>
-    
-    <section>
-      <h1>Watch our Story</h1>
-      
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/YA2ofbdd-G8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </section>
-    
-    <section>
-      <h1>Our Goal</h1>
-      
-      <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.</p>
-      
-      <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis.</p>
-    </section>
-    
-    <section>
-      <h1>Steps to Reach our Goal</h1>
-      
-      <h2>Outreach</h2>
-      
-      <p>(a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</p>
-      
-      <p>(b) Assist in the creation and development of a Florida-based energy technology industry by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers.</p>
-    </section>
-    
-    <section>
-      <h2>Education</h2>
-      
-      <p>(c) Provide a state resource for objective energy systems analysis.</p>
-      
-      <p>(d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.</p>
-    </section>
-    
-    <section>
-      <form method="GET">
-        <h3>Want to learn more? Sign up for the FESC Florida Energy Connections Newsletter</h3>
-        
-        <label>
-          Name
-          <input type="text" name="name">
-        </label>
-        
-        <label>
-          E-Mail:
-          <input type="email" name="email">
-        </label>
-        
-        <input type="submit" value="submit">
-      </form>
-    </section>
-    
-    <footer>
-      <p>Copyright © 2008-2015 Florida Energy Systems Consortium.</p>
-      
-      <a href="http://floridaenergy.ufl.edu/contact-us/">Contact Us</a>
-      
-      <a href="http://floridaenergy.ufl.edu/sitemap/">Site Map</a>
-      
-      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=FESC%20Site" data-size="large">Tweet</a>
-    </footer>
-    
+      <footer class="area foot">
+        <article class="wrap">
+          <div class="text">
+            <p>Copyright © 2008-2015 Florida Energy Systems Consortium.</p>
+
+            <a href="http://floridaenergy.ufl.edu/contact-us/">Contact Us</a>
+
+            <a href="http://floridaenergy.ufl.edu/sitemap/">Site Map</a>
+
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=FESC%20Site" data-size="large">Tweet</a>
+          </div>
+        </article>
+      </footer>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </body>
 </html>

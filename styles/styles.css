@@ -74,4 +74,146 @@ header {
     header .nav-toggle:hover span {
       background-image: url(../images/nav-toggle-hover.png); }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  max-width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: #1d566a;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: all 0.25s ease-out;
+  -mox-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -transition: all 0.25s ease-out; }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 1.5em;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    .sidenav a:hover {
+      color: #E04328; }
+  .sidenav:hover {
+    color: #f1f1f1; }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
+.area {
+  padding: 2em 0 4.5em 0;
+  position: relative; }
+  @media (min-width: 450px) {
+    .area {
+      padding: 7em 0 9.5em 0; } }
+  .area.title, .area.project-background, .area.fescvideos, .area.education-mission {
+    background: #bcf5cf; }
+  .area.video, .area.education, .area.fact-sheet, .area.education-start {
+    background: #f5fbfd; }
+  .area.goal, .area.outgoals, .area.education-explore {
+    background: #b3ffcc; }
+  .area.steps, .area.newsletter, .area.news, .area.education-collab {
+    background: #e6ffee; }
+  .area.foot {
+    background: #d1e9e4; }
+
+.wrap {
+  padding: 0 15px;
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto; }
+  .wrap .text {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto; }
+
+h1 {
+  font-size: 2em;
+  color: #1d566a;
+  line-height: 100%;
+  font-weight: 500;
+  text-transform: uppercase; }
+  @media (min-width: 450px) {
+    h1 {
+      font-size: 3em; } }
+
+h2 {
+  font-size: 2em;
+  color: #1d566a;
+  line-height: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1em 0;
+  text-align: center; }
+  h2 .area h1:first-child, h2 .area h2:first-child {
+    margin-top: 0; }
+
+h3 {
+  font-size: 1.25em;
+  color: #112d37;
+  line-height: 120%;
+  font-weight: 400;
+  margin: 2em 0 0.5em 0; }
+
+p {
+  margin-bottom: 1em; }
+
+.title, .outgoals, .education-mission {
+  text-align: center; }
+  .title .text, .outgoals .text, .education-mission .text {
+    padding-top: 5rem; }
+  @media (min-width: 450px) {
+    .title, .outgoals, .education-mission {
+      padding-top: 1.5rem; } }
+  @media (min-width: 800px) {
+    .title, .outgoals, .education-mission {
+      padding-top: 2rem; } }
+
+.video {
+  text-align: center;
+  display: none; }
+  @media (min-width: 450px) and (min-width: 800px) {
+    .video {
+      display: block; } }
+
+.newsletter {
+  text-align: center; }
+  .newsletter label input {
+    max-width: 20%; }
+
+.fact-sheet a, .fescvideos a, .news a, .education-explore a, .education-collab a, .education-start a {
+  text-decoration: none; }
+  .fact-sheet a:hover, .fescvideos a:hover, .news a:hover, .education-explore a:hover, .education-collab a:hover, .education-start a:hover {
+    font-weight: 900; }
+
+.foot {
+  text-align: center; }
+  .foot a {
+    float: left;
+    display: block;
+    max-width: 33.33%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-decoration: none; }
+    .foot a:hover {
+      font-weight: 900; }
+
 /*# sourceMappingURL=styles.css.map */
