@@ -10,6 +10,8 @@
     
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     
     <!-- Facebook Meta Tags -->
@@ -27,6 +29,8 @@
     <meta name="twitter:image" content="http://reg.conferences.dce.ufl.edu/docs/FESC/2018/FESC_Logo_Final%20(1).jpg">
     <meta name="twitter:card" content="summary_large_image">
     
+    <!-- Vue development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   
   <body>
@@ -48,99 +52,73 @@
       return t;
     }(document, "script", "twitter-wjs"));</script>
     
-    <header>
-      <div class="wrap">
-        <div class="nav-toggle" onclick="openNav()">
-          <span></span>
-        </div>
-        
-        <h1>
-          <a href="http://floridaenergy.ufl.edu/"></a>
-        </h1>
-        
-        
-      </div>
+    <!-- VUE HEADER -->
+    <header id="vue-header-parent">
+      <vue-header-child></vue-header-child>
     </header>
     
+    <!-- VUE NAV -->
     <div id="mySidenav" class="sidenav">
-      <div class="inside-nav">
-        <ul>
-          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-
-          <li>
-            <a href="#">Opportunities</a>
-          </li>
-
-          <li>
-            <a href="outreach.html">Outreach</a>
-          </li>
-        </ul>
-      </div>
+      <vue-nav-child></vue-nav-child>
     </div>
     
-    <section class="area education-mission">
-      <article class="wrap">
-        <div class="text">
-          <h2>Ready to Teach the Next Generation</h2>
+    <!-- Sections with content -->
+    <div class="contentwrap">
+      <section class="area education-mission">
+        <article class="wrap">
+          <div class="text">
+            <h2>Ready to Teach the Next Generation</h2>
 
-          <p>Florida’s utilities have predicted that the State’s energy use will increase significantly in the coming years. Energy efficiency and renewable energy generation are vital to meeting this demand. FESC’s statewide education program will produce a workforce trained to meet Florida’s energy needs. </p>
-        </div>
-      </article>
-    </section>
+            <p>Florida’s utilities have predicted that the State’s energy use will increase significantly in the coming years. Energy efficiency and renewable energy generation are vital to meeting this demand. FESC’s statewide education program will produce a workforce trained to meet Florida’s energy needs. </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area education-explore">
+        <article class="wrap">
+          <div class="text">
+            <h2>Explore Education Programs in the Energy Industry</h2>
+
+            <p>Florida’s State and Community Colleges offer an opportunity to develop a trained energy workforce through programming for two-year or four-year degrees.</p>
+
+            <a href="http://floridaenergy.ufl.edu/energy-education/educational-programsworkshops/">Learn More</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="area education-collab">
+        <article class="wrap">
+          <div class="text">
+            <h2>FESC Collaboration with Universities</h2>
+
+            <p>FESC’s training and educational efforts are aimed at multiple levels of the career ladder: community college trained technicians, bachelors level students, graduate researchers, and practitioners who seek to update their existing skills. This statewide initiative is being distributed across partner institutions and capitalizes on each institution’s strengths to provide educational opportunities for both the conventional power generation industries and newly created energy related industries.</p>
+
+            <a href="http://floridaenergy.ufl.edu/energy-education/energy-education-by-institution/">Learn More</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="area education-start">
+        <article class="wrap">
+          <div class="text">
+            <h2>Don't know where to Start?</h2>
+
+            <p>Are you interested in learning more about the Energy Industry? Universities across the United States are offering Free Online Courses to get aspiring individuals a taste of what it's like to work in the Energy Industry.</p>
+
+            <a href="http://floridaenergy.ufl.edu/energy-education/free-online-courses/">Learn More</a>
+          </div>
+        </article>
+      </section>
+      
+      <!-- VUE FOOTER -->
+      <footer id="vue-footer-parent" class="area foot">
+          <vue-footer-child></vue-footer-child>
+      </footer>
+    </div>
     
-    <section class="area education-explore">
-      <article class="wrap">
-        <div class="text">
-          <h2>Explore Education Programs in the Energy Industry</h2>
-
-          <p>Florida’s State and Community Colleges offer an opportunity to develop a trained energy workforce through programming for two-year or four-year degrees.</p>
-
-          <a href="http://floridaenergy.ufl.edu/energy-education/educational-programsworkshops/">Learn More</a>
-        </div>
-      </article>
-    </section>
+    <script src="components.js"></script>
     
-    <section class="area education-collab">
-      <article class="wrap">
-        <div class="text">
-          <h2>FESC Collaboration with Universities</h2>
-
-          <p>FESC’s training and educational efforts are aimed at multiple levels of the career ladder: community college trained technicians, bachelors level students, graduate researchers, and practitioners who seek to update their existing skills. This statewide initiative is being distributed across partner institutions and capitalizes on each institution’s strengths to provide educational opportunities for both the conventional power generation industries and newly created energy related industries.</p>
-
-          <a href="http://floridaenergy.ufl.edu/energy-education/energy-education-by-institution/">Learn More</a>
-        </div>
-      </article>
-    </section>
-    
-    <section class="area education-start">
-      <article class="wrap">
-        <div class="text">
-          <h2>Don't know where to Start?</h2>
-
-          <p>Are you interested in learning more about the Energy Industry? Universities across the United States are offering Free Online Courses to get aspiring individuals a taste of what it's like to work in the Energy Industry.</p>
-
-          <a href="http://floridaenergy.ufl.edu/energy-education/free-online-courses/">Learn More</a>
-        </div>
-      </article>
-    </section>
-    
-    <footer class="area foot">
-      <article class="wrap">
-        <div class="text">
-          <p>Copyright © 2008-2015 Florida Energy Systems Consortium.</p>
-
-          <a href="http://floridaenergy.ufl.edu/contact-us/">Contact Us</a>
-
-          <a href="http://floridaenergy.ufl.edu/sitemap/">Site Map</a>
-
-          <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=FESC%20Site" data-size="large">Tweet</a>
-        </div>
-      </article>
-    </footer>
-    
+    <!-- Script for side nav -->
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";

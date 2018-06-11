@@ -1,8 +1,10 @@
+// Global Colors
 $mid-green: #bcf5cf;
 $dark-green: #b3ffcc;
 $light-green: #e6ffee;
 $fesc-white: #f5fbfd;
 
+// BODY w/ media queries for text customization
 body {
   margin: 0;
   padding: 0;
@@ -34,6 +36,7 @@ body {
   }
 }
 
+//Header for All Sites
 header {
   height: 3.75em;
   background: #FAFAFA;
@@ -99,6 +102,7 @@ header {
   }
 }
 
+//NAV for all sites
 .sidenav {
   height: 100%;
   width: 0;
@@ -149,6 +153,8 @@ header {
   .sidenav a {font-size: 18px;}
 }
 
+//Global Content Margins and Padding
+//Global Colors
 .area {
   padding: 2em 0 4.5em 0;
   position: relative;
@@ -172,6 +178,7 @@ header {
   }
 }
 
+//Text Content Margins and Padding
 .wrap {
   padding: 0 15px;
   width: 90%;
@@ -184,6 +191,7 @@ header {
   }
 }
 
+//Global H1 rules
 h1 {
   font-size: 2em;
   color: #1d566a;
@@ -195,6 +203,7 @@ h1 {
   }
 }
 
+//Global H2 rules
 h2 {
   font-size: 2em;
   color: #1d566a;
@@ -210,6 +219,7 @@ h2 {
   }
 }
 
+//Global H3 rules
 h3 {
   font-size: 1.25em;
   color: #112d37;
@@ -218,10 +228,12 @@ h3 {
   margin: 2em 0 0.5em 0;
 }
 
+//Global p rule margin
 p {
   margin-bottom: 1em;
 }
 
+//Assigned classes padding with media queries
 .title, .outgoals, .education-mission {
   text-align:center;
   .text {
@@ -235,7 +247,7 @@ p {
   }
 }
 
-
+//Video alignment w/ media queries
 .video {
   text-align: center;
   display: none;

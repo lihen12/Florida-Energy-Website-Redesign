@@ -10,6 +10,8 @@
     
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     
     <!-- Facebook Meta Tags -->
@@ -27,6 +29,8 @@
     <meta name="twitter:image" content="http://reg.conferences.dce.ufl.edu/docs/FESC/2018/FESC_Logo_Final%20(1).jpg">
     <meta name="twitter:card" content="summary_large_image">
     
+    <!-- Vue development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   
   <body>
@@ -48,97 +52,73 @@
       return t;
     }(document, "script", "twitter-wjs"));</script>
     
-    <header>
-      <div class="wrap">
-        <div class="nav-toggle" onclick="openNav()">
-          <span></span>
-        </div>
-        
-        <h1>
-          <a href="http://floridaenergy.ufl.edu/"></a>
-        </h1>
-      </div>
+    <!-- VUE HEADER -->
+    <header id="vue-header-parent">
+      <vue-header-child></vue-header-child>
     </header>
     
+    <!-- VUE NAV -->
     <div id="mySidenav" class="sidenav">
-      <div class="inside-nav">
-        <ul>
-          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-
-          <li>
-            <a href="education.html">Opportunities</a>
-          </li>
-
-          <li>
-            <a href="#">Outreach</a>
-          </li>
-        </ul>
-      </div>
+      <vue-nav-child></vue-nav-child>
     </div>
     
-    <section class="area outgoals">
-      <article class="wrap">
-        <div class="text">
-          <h2>The Twin Goals of our Outreach</h2>
+    <!-- Section with Content -->
+    <div class="contentwrap">
+      <section class="area outgoals">
+        <article class="wrap">
+          <div class="text">
+            <h2>The Twin Goals of our Outreach</h2>
 
-          <p>The overall twin goals of the FESC Outreach effort are to increase Florida’s energy use efficiency and to measurably reduce its emissions of greenhouse gases. Dr. Pierce Jones, Professor & Director, Program for Resources Efficient Communities, UF, leads outreach through his experience with the Florida Cooperative Extension Service.</p>
-        </div>
-      </article>
-    </section>
+            <p>The overall twin goals of the FESC Outreach effort are to increase Florida’s energy use efficiency and to measurably reduce its emissions of greenhouse gases. Dr. Pierce Jones, Professor & Director, Program for Resources Efficient Communities, UF, leads outreach through his experience with the Florida Cooperative Extension Service.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area fact-sheet">
+        <article class="wrap">
+          <div class="text">
+            <h2>Energy Fact Sheets</h2>
+
+            <p>As part of our outreach effort, directed by UF’s Dr. Pierce Jones, FESC is continually expanding Energy Fact Sheet development. The following publications are available online through the Energy Education Library, located on the Florida Department of Agriculture and Consumer Services website.</p>
+
+            <a href="http://floridaenergy.ufl.edu/public-outreach/energy-fact-sheets/">Learn More</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="area fescvideos">
+        <article class="wrap">
+          <div class="text">
+            <h2>FESC Energy Videos</h2>
+
+            <p>These Public Service Announcements were created by The Center for the Advancement of Environmental Media Production and Research at Florida State University. This series of videos is designed to positively influence citizen’s environmental conservation attitudes and behaviors.</p>
+
+            <a href="http://floridaenergy.ufl.edu/public-outreach/public-service-announcements/">Learn More</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="area news">
+        <article class="wrap">
+          <div class="text">
+            <h2>FESC Research News and Expertise</h2>
+
+            <p>FESC researchers focus on these thrust areas. Within these areas are more specific research topics. Click on your topic of interest for more information, including FESC faculty expertise and the latest research news.</p>
+
+            <a href="http://floridaenergy.ufl.edu/public-outreach/fesc-research-areas/">Learn More</a>
+          </div>
+        </article>
+      </section>
+      
+      <!-- VUE Footer -->
+      <footer id="vue-footer-parent" class="area foot">
+        <vue-footer-child></vue-footer-child>
+      </footer>
+    </div>
+    <!-- Vue script -->
+    <script src="components.js"></script>
     
-    <section class="area fact-sheet">
-      <article class="wrap">
-        <div class="text">
-          <h2>Energy Fact Sheets</h2>
-
-          <p>As part of our outreach effort, directed by UF’s Dr. Pierce Jones, FESC is continually expanding Energy Fact Sheet development. The following publications are available online through the Energy Education Library, located on the Florida Department of Agriculture and Consumer Services website.</p>
-
-          <a href="http://floridaenergy.ufl.edu/public-outreach/energy-fact-sheets/">Learn More</a>
-        </div>
-      </article>
-    </section>
-    
-    <section class="area fescvideos">
-      <article class="wrap">
-        <div class="text">
-          <h2>FESC Energy Videos</h2>
-
-          <p>These Public Service Announcements were created by The Center for the Advancement of Environmental Media Production and Research at Florida State University. This series of videos is designed to positively influence citizen’s environmental conservation attitudes and behaviors.</p>
-
-          <a href="http://floridaenergy.ufl.edu/public-outreach/public-service-announcements/">Learn More</a>
-        </div>
-      </article>
-    </section>
-    
-    <section class="area news">
-      <article class="wrap">
-        <div class="text">
-          <h2>FESC Research News and Expertise</h2>
-
-          <p>FESC researchers focus on these thrust areas. Within these areas are more specific research topics. Click on your topic of interest for more information, including FESC faculty expertise and the latest research news.</p>
-
-          <a href="http://floridaenergy.ufl.edu/public-outreach/fesc-research-areas/">Learn More</a>
-        </div>
-      </article>
-    </section>
-    
-    <footer class="area foot">
-      <article class="wrap">
-        <div class="text">
-          <p>Copyright © 2008-2015 Florida Energy Systems Consortium.</p>
-
-          <a href="http://floridaenergy.ufl.edu/contact-us/">Contact Us</a>
-
-          <a href="http://floridaenergy.ufl.edu/sitemap/">Site Map</a>
-
-          <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=FESC%20Site" data-size="large">Tweet</a>
-        </div>
-      </article>
-    </footer>
-    
+    <!-- Script for side nav -->
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
