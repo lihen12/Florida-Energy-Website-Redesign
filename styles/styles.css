@@ -118,6 +118,12 @@ header {
 
   .sidenav a {
     font-size: 18px; } }
+#chart1 {
+  margin-top: 5rem; }
+
+#chart2 {
+  padding-top: 0.5rem; }
+
 .area {
   padding: 2em 0 4.5em 0;
   position: relative; }
