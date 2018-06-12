@@ -49,7 +49,7 @@ function renewableProd(freshData) {
 function getData2(){
   let request = new XMLHttpRequest()
   // TODO: URL to contact goes here
-  let requestUrl = "http://api.eia.gov/series/?api_key=f8f3fad1c1fe690549b8b646d4429af3&series_id=SEDS.TETCB.FL.A"
+  let requestUrl = "https://api.eia.gov/series/?api_key=f8f3fad1c1fe690549b8b646d4429af3&series_id=SEDS.TETCB.FL.A"
   // Open a connection
   request.open('GET', requestUrl, true)
   // Callback for when the request completes
