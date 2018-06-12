@@ -88,5 +88,12 @@
 - Desktop (high priority)
 
 ## Recommendations
+- Ensure responsiveness with all aspects of site
+- Media queries are used properly based on researched device properties
+- Ensure Google Charts is responsive
+
 
 ### Deliverables - Each with description and acceptance terms
+- Good results for Google Mobile Friendliness Tests
+- No Validation errors
+- No broken links
