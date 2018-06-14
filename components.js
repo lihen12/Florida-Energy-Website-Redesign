@@ -13,7 +13,7 @@ var vueHeaderFunc = new Vue({
 
 Vue.component('vue-nav-child', {
   props: ['text'],
-  template: '<div class="inside-nav"><ul><li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li><li><a href="#">Home</a></li><li><a href="education.html">Opportunities</a></li><li><a href="outreach.html">Outreach</a></li></ul></div>'
+  template: '<div class="inside-nav"><ul><li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li><li><a href="index.html">Home</a></li><li><a href="education.html">Opportunities</a></li><li><a href="outreach.html">Outreach</a></li></ul></div>'
 })
 
 var vueNavFunc = new Vue({
